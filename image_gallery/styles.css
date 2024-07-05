@@ -1,0 +1,45 @@
+#wrapper{
+    margin: 150px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+}
+.heading{
+    padding-top: 30px;
+    text-align: center;       
+}
+#gal{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    grid-template-rows: repeat(3,2fr);
+    padding:10px;
+}
+.card{
+    position: relative;
+    padding: 10px;
+    filter:grayscale(100%);
+    transition:  filter 0.2s ease;
+    transition: box-shadow 0.3s ease;
+   
+}
+.card:hover {
+    figcaption{
+    visibility: visible;
+    }
+    filter: grayscale(0%);
+    filter: drop-shadow(0 0 10px #333);
+    transform: scale(1.05);
+}
+.card figcaption {
+       visibility: hidden;
+        position: absolute;
+        right:80%;
+        bottom:30px;
+        color:white;
+        
+    }
+.card img{
+    border-radius:3px;
+    max-width: 100%;
+    }
