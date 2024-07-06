@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    background-color:rgb(255,229,180);
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+#container{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: repeat(2,1fr) ;
+ 
+}
+#container img{
+    width: 100%;
+    border-top-left-radius:20px;
+    border-bottom-left-radius: 20px;
+}
+#txt p, #txt span {
+    margin: 10px 0; /* Added margin for spacing between elements */
+}
+#txt{
+    padding: 10px;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.add{
+    display: block;
+    background-color: green;
+    margin-left:30px;
+    cursor:pointer;
+    transition: filter 0.2s ease;
+}
+.add:hover{
+    filter:brightness(80%);
+}
